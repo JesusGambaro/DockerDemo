@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+version = '1'
 sourceCompatibility = '17'
 
 repositories {
@@ -22,6 +22,5 @@ tasks.named('test') {
 }
 
 bootJar {
-	//para que se pueda ejecutar el jar en docker
 	enabled = true
 }
