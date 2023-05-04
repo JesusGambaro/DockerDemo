@@ -20,7 +20,12 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
-//use bootJar task to build jar file
+
+
+tasks.jar {
+	enabled(false)
+}
+
 bootJar {
 	archiveName('demo.jar')
 	enabled(true)
