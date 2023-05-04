@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.example'
-version = '1'
+version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
@@ -20,7 +20,8 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
-
+//use bootJar task to build jar file
 bootJar {
-	enabled = true
+	archiveName('demo.jar')
+	enabled(true)
 }
